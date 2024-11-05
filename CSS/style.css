@@ -5,10 +5,38 @@
     margin: 0;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 .about-sec {
     display: flex;
     flex-direction: column;
-    height: 45dvh;
+    height: 50dvh;
     align-items: center;
     justify-content: end;
 
@@ -39,12 +67,14 @@
         box-shadow: 4px 4px;
         font-weight: 600;
         transition: all 0.2s;
-        &:hover{
+
+        &:hover {
             box-shadow: 2px 2px;
             transform: translate(2px, 2px);
             cursor: pointer;
         }
-        &:active{
+
+        &:active {
             box-shadow: none;
             transform: translate(4px, 4px);
         }
@@ -52,7 +82,7 @@
 }
 
 .project-sec {
-    height: 45dvh;
+    height: 40dvh;
     display: flex;
     align-items: center;
     justify-content: center;
