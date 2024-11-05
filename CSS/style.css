@@ -1,4 +1,5 @@
 @import url(/CSS/animation/button-animation.css);
+@import url(/CSS/components/carousel/carousel-style.css);
 
 * {
     font-family: monospace;
@@ -10,7 +11,7 @@
 .about-sec {
     display: flex;
     flex-direction: column;
-    height: 50dvh;
+    height: 45dvh;
     align-items: center;
     justify-content: end;
 
@@ -19,34 +20,33 @@
         text-decoration: none;
         background-color: transparent;
     }
+
+    & button {
+        padding: 10px 0;
+        font-weight: 600;
+        margin: 0 5px;
+    }
 }
 
-.profile-img {
+.about-sec .profile-img {
     border: 2px solid #fff;
     border-radius: 100%;
     height: 150px;
     margin-bottom: 20px;
 }
 
-.about-text {
+.about-sec .about-text {
     font-size: 1.5rem;
     text-align: center;
     line-height: 2.5rem;
     margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 0;
-    font-weight: 600;
-    margin: 0 5px;
-}
-
-/* icons start */
 .tooltip {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-}
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
 
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -69,18 +69,14 @@ button {
     visibility: visible;
     opacity: 1;
 }
-/* icons end */
 
 .project-sec {
-    height: 40dvh;
+    height: 45dvh;
+    width: 100dvw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    & h2 {
-        margin-bottom: 20px;
-    }
 }
 
 .footer {
