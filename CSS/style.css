@@ -1,3 +1,5 @@
+@import url(/CSS/animation/button-animation.css);
+
 * {
     font-family: monospace;
     background-color: #010409;
@@ -33,23 +35,8 @@
     }
 
     & button {
-        border: 2px solid #fff;
-        border-radius: 45px;
         padding: 10px 0;
-        box-shadow: 4px 4px;
         font-weight: 600;
-        transition: all 0.2s;
-
-        &:hover {
-            box-shadow: 2px 2px;
-            transform: translate(2px, 2px);
-            cursor: pointer;
-        }
-
-        &:active {
-            box-shadow: none;
-            transform: translate(4px, 4px);
-        }
     }
 }
 
