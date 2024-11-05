@@ -8,7 +8,7 @@
 .about-sec {
     display: flex;
     flex-direction: column;
-    height: 40dvh;
+    height: 45dvh;
     align-items: center;
     justify-content: end;
 
@@ -28,18 +28,39 @@
         font-size: 1.5rem;
         text-align: center;
         line-height: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    & button {
+        border: 2px solid #fff;
+        border-radius: 45px;
+        padding: 10px 20px;
+        box-shadow: 4px 4px;
+        font-weight: 600;
+        transition: all 0.2s;
+        &:hover{
+            box-shadow: 2px 2px;
+            transform: translate(2px, 2px);
+            cursor: pointer;
+        }
+        &:active{
+            box-shadow: none;
+            color: #010409;
+            background-color: #ffffff;
+            transform: translate(4px, 4px);
+        }
     }
 }
 
 .project-sec {
-    height: 40dvh;
+    height: 45dvh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .links {
-    height: 20dvh;
+    height: 10dvh;
     display: flex;
     align-items: center;
     justify-content: center;
