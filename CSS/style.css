@@ -2,4 +2,26 @@
     font-family: monospace;
     background-color: #010409;
     color: #ffffff;
+    margin: 0;
+}
+
+.about-sec {
+    height: 40dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-sec {
+    height: 40dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    height: 20dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
