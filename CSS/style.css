@@ -19,60 +19,57 @@
         text-decoration: none;
         background-color: transparent;
     }
-
-    & .profile-img {
-        border: 2px solid #fff;
-        border-radius: 100%;
-        height: 150px;
-        margin-bottom: 20px;
-    }
-
-    & .about-text {
-        font-size: 1.5rem;
-        text-align: center;
-        line-height: 2.5rem;
-        margin-bottom: 20px;
-    }
-
-    & button {
-        padding: 10px 0;
-        font-weight: 600;
-        margin: 0 5px;
-    }
 }
 
-.icons {
-    /* display: flex;
-    flex-direction: row; */
-
-    & .tooltip {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-
-    & .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: #191919;
-        color: #fff;
-        text-align: center;
-        border-radius: 8px;
-        padding: 4px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-
-    & .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
+.profile-img {
+    border: 2px solid #fff;
+    border-radius: 100%;
+    height: 150px;
+    margin-bottom: 20px;
 }
+
+.about-text {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 0;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+/* icons start */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #191919;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/* icons end */
 
 .project-sec {
     height: 40dvh;
@@ -80,6 +77,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    & h2 {
+        margin-bottom: 20px;
+    }
 }
 
 .footer {
