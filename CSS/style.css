@@ -1,48 +1,61 @@
-@import url(/CSS/animation/button-animation.css);
-
+/* Base */
 * {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: monospace;
-    background-color: #010409;
-    color: #ffffff;
-    margin: 0;
+    background-color: #101720;
+    color: #fff;
 }
 
-.about-sec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-
-    & a {
-        padding: 10px 20px;
-        text-decoration: none;
-        background-color: transparent;
-    }
-
-    & button {
-        padding: 10px 0;
-        font-weight: 600;
-        margin: 0 5px;
-    }
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
 }
 
-.about-sec .profile-img {
-    border: 2px solid #fff;
-    border-radius: 100%;
-    height: 150px;
-    margin-bottom: 20px;
+ul {
+    list-style: none;
 }
 
-.about-sec .about-text {
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 2.5rem;
-    margin-bottom: 20px;
+a {
+    text-decoration: none;
 }
 
-.footer {
-    height: 10dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+
+/* Usable CSS Classes */
+
+.container {
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title{
+    width: max-content;
+    margin: 0 auto 2.5rem;
+    font-size: ;
+    font-weight: ;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.75rem;
+}
+
