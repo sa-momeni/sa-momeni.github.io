@@ -10,7 +10,6 @@
 .about-sec {
     display: flex;
     flex-direction: column;
-    height: 45dvh;
     align-items: center;
     justify-content: end;
 
