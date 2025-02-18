@@ -53,8 +53,8 @@ img {
 .section__title{
     width: max-content;
     margin: 0 auto 2.5rem;
-    font-size: ;
-    font-weight: ;
+    /* font-size: ;
+    font-weight: ; */
     border-bottom: 2px solid #fff;
     padding-bottom: 0.75rem;
 }
