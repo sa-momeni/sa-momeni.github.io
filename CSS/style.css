@@ -5,5 +5,25 @@
     background-color: #010409;
     color: #ffffff;
     margin: 0;
+    text-decoration: none;
 }
 
+.title {
+    height: 95vh;
+    width: 100%;
+    align-content: center;
+    justify-items: center;
+    font-size: 2rem;
+}
+
+.footer {
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    & a {
+        margin: 1.5rem;
+    }
+}
