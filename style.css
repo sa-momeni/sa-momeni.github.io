@@ -1,0 +1,280 @@
+:root {
+    --bg-color: #121212;
+    --container-bg: #161616;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --border-color: #ffffff;
+    --border-radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'IRANYekanX', 'Vazirmatn', sans-serif;
+    justify-self: center;
+}
+
+::selection {
+    background-color: #fff;
+    color: #202020;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2vh 2vw;
+}
+
+/* --- لودر مینیمال وسط صفحه --- */
+#loader-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    /* عرض مینیمال لودر */
+    height: 2px;
+    /* ضخامت ظریف لودر */
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.05);
+    /* یک پس‌زمینه بسیار محو به عنوان مسیر */
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#linear-loader {
+    height: 100%;
+    width: 0%;
+    background: #ffffff;
+    transition: width 0.4s ease, opacity 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+}
+
+/* کادر اصلی */
+.app-wrapper {
+    width: 96vw;
+    height: 96vh;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #7a7a7a;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(135deg, #181818 0%, #0d0d0d 100%);
+    opacity: 0;
+    /* برای انیمیشن ورود */
+    transform: scale(0.98);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+body.loaded .app-wrapper {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* هدر */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: var(--text-muted);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* تب های منو (تغییر یافته به لینک a) */
+.tabs-nav {
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+}
+
+.tab-link {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.tab-link:hover,
+.tab-link.active {
+    color: var(--text-main);
+    font-weight: bold;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 4px 4px 0 #7a7a7a;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-outline:hover {
+    background: #1c39bb;
+    color: #fff;
+    translate: 2px 2px;
+    box-shadow: 2px 2px 0 #7a7a7a;
+}
+
+/* محتوای اصلی */
+.main-content {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-right {
+    flex: 1;
+    text-align: right;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    background-color: #333;
+}
+
+.title-primary {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text-body {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.content-left {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mock-panel {
+    background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    position: absolute;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.panel-1 {
+    width: 350px;
+    height: 200px;
+    transform: rotate(-5deg) translateX(-50px) translateY(-40px);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.panel-2 {
+    width: 350px;
+    height: 200px;
+    transform: rotate(-2deg) translateX(-20px) translateY(-20px);
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.panel-3 {
+    width: 350px;
+    height: 220px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--text-muted);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
