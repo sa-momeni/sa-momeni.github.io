@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Estedad;
+    src: url(/font/Estedad[wght].woff2);
+}
+
 :root {
     --bg-color: #121212;
     --container-bg: #161616;
@@ -11,7 +16,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'IRANYekanX', 'Vazirmatn', sans-serif;
+    font-family: 'Estedad', sans-serif;
     justify-self: center;
 }
 
