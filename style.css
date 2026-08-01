@@ -95,7 +95,7 @@ header {
 }
 
 .logo {
-    font-family: inherit;
+    font-family: estedad, sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -126,7 +126,7 @@ header {
     text-decoration: none;
     color: var(--text-muted);
     font-size: 1rem;
-    font-family: inherit;
+    font-family: estedad, sans-serif;
     transition: color 0.3s ease;
 }
 
@@ -145,6 +145,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.9rem;
+    font-family: estedad, sans-serif;
     font-weight: bold;
     transition: all 0.3s;
     text-decoration: none;
