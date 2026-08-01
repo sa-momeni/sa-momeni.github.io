@@ -1,6 +1,6 @@
 @font-face {
     font-family: Estedad;
-    src: url(/font/Estedad[wght].woff2);
+    src: url(/font/Estedad[wght].woff2) format(woff2);
 }
 
 :root {
